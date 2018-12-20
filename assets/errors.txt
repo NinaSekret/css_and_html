@@ -1,0 +1,2 @@
+[Tue Dec 18 2018 22:18:32 GMT+0700 (Новосибирское стандартное время)] layer "portfolioV6.jpg": Duplicate path: portfolioV6.jpg
+[Tue Dec 18 2018 22:18:32 GMT+0700 (Новосибирское стандартное время)] layer "+": Expected Either a default asset specification or a layer asset specification but "+" found.

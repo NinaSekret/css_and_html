@@ -1,0 +1,275 @@
+@font-face {
+    font-family: Segoe UI;
+    src: url('../font/SegoeUI-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family:  Segoe UI;
+}
+
+.header {
+    height: 600px;
+    background: url(assets/background.png) 100% 100% no-repeat;
+    background-size: cover;
+}
+
+.header_nav {
+    height: 151px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(51, 51, 51, .5);
+}
+
+.header_logo {
+    display: block;
+    margin: 0;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.header_logo__color {
+    color: #4bcaff;
+}
+
+.header_list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.header_list_item {
+    padding: 10px 15px;
+    border: 2px solid transparent;
+    margin-right: 56px;
+    cursor: pointer;
+}
+
+.header_list_item:hover {
+    border: 2px solid #4bcaff;
+}
+
+.header_list_item:hover a {
+    color: #4bcaff;
+}
+
+.header_list_item a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.header_list :last-child{
+    margin-right: 0px;
+}
+
+.header_info {
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 42px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.header_title {
+    display: block;
+    background: rgba(51, 51, 51, .5);
+    margin:0 0 15px;  
+}
+
+.services_container {
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    background-color: #33ccff;
+}
+
+.services {
+    max-width: 1170px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.services_title {
+    position: relative;
+}
+
+.services_title_header {
+    margin: 0 0 52px;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.services_title_line {
+    width: 45px;
+    height: 2px;
+    position: absolute;
+    top: 33px;
+    left: 2px;
+    background-color: #fff;
+}
+
+.services_wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.services_item {
+    width: 20%;
+}
+
+.services_wrap :last-child {
+    padding-right: 0;
+}
+
+.services_item_title {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.services_item_info {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+}
+
+.portfolio_container {
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    color: #515f67;
+}
+
+.portfolio {
+    max-width: 1170px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 2;
+}
+
+.portfolio_header {
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio_title {
+    position: relative;
+}
+
+.portfolio_title_header {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.portfolio_title_line {
+    width: 45px;
+    height: 2px;
+    position: absolute;
+    top: 33px;
+    left: 2px;
+    background-color: #515f67;
+}
+
+.portfolio_list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.portfolio_list_item {
+    padding: 10px 15px;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.portfolio_list_item:hover {
+    border: 2px solid #4bcaff;
+}
+
+.portfolio_list_item:hover a {
+    color: #4bcaff;
+}
+
+.portfolio_list_item a {
+    display: block;
+    text-decoration: none;
+    color: #515f67;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.portfolio_list :last-child{
+    margin-right: 0px;
+}
+
+.portfolio_img_wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio_img {
+    width: 270px;
+    height: 270px;
+    margin: 0 30px 30px 0;
+}
+
+.portfolio_img:hover {
+    background-color: black;
+}
+
+.portfolio_img_wrap :nth-child(4n):nth-child(even) {
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .services_item {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .services_item {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .services_wrap{
+        flex-direction: column;
+        align-items: center;
+    }
+}
