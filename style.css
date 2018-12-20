@@ -119,11 +119,11 @@ body {
     color: #fff;
 }
 
-.services_title {
+.title {
     position: relative;
 }
 
-.services_title_header {
+.title_header {
     margin: 0 0 52px;
     font-size: 30px;
     font-weight: 300;
@@ -131,12 +131,15 @@ body {
     text-transform: uppercase;
 }
 
-.services_title_line {
+.title_line {
     width: 45px;
     height: 2px;
     position: absolute;
     top: 33px;
     left: 2px;
+}
+
+.services_title_line {
     background-color: #fff;
 }
 
@@ -187,24 +190,7 @@ body {
     justify-content: space-between;
 }
 
-.portfolio_title {
-    position: relative;
-}
-
-.portfolio_title_header {
-    margin: 0;
-    font-size: 30px;
-    font-weight: 300;
-    line-height: 24px;
-    text-transform: uppercase;
-}
-
 .portfolio_title_line {
-    width: 45px;
-    height: 2px;
-    position: absolute;
-    top: 33px;
-    left: 2px;
     background-color: #515f67;
 }
 
@@ -275,6 +261,10 @@ body {
 
 .portfolio_img_wrap :nth-child(4n) {
     margin: 0;
+}
+
+.default_title_line {
+    background-color: #fff;
 }
 
 @media screen and (max-width: 1120px) {
