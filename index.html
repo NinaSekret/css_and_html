@@ -1,30 +1,46 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title></title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
 
 </head>
+
 <body>
     <header class="header">
-        <div class="header_nav_container">
-            <nav class="header_nav">
+        <div class="header_nav_wrap">
+            <div class="header_nav">
                 <p class="header_logo">blu<span class="header_logo__color">e</span>asy</p>
-                <button id="menu" class="header_list_btn"><img src="assets/bars.png"></button>
-                <ul class="header_list">
-                    <li class="header_list_item _current"><a href="#">home</a></li>
-                    <li class="header_list_item"><a href="#">services</a></li>
-                    <li class="header_list_item"><a href="#">features</a></li>
-                    <li class="header_list_item"><a href="#">portfolio</a></li>
-                    <li class="header_list_item"><a href="#">contact</a></li>
-                </ul>
-            </nav>
+                <div class="menu">
+                    <input type="checkbox" id="menu" class="menu_btn">
+                    <label for="menu">
+                        <div class='menu_btn_list'>
+                            <span class="menu_btn_line _line1"></span>
+                            <span class="menu_btn_line _line2"></span>
+                            <span class="menu_btn_line _line3"></span>
+                        </div>
+                    </label>
+                    </input>
+                    <nav class="menu_list">
+                        <li class="menu_item"><a class="menu_item_link" href="мл">home</a></li>
+                        <li class="menu_item"><a class="menu_item_link" href="#">services</a></li>
+                        <li class="menu_item"><a class="menu_item_link" href="#">features</a></li>
+                        <li class="menu_item"><a class="menu_item_link" href="#">portfolio</a></li>
+                        <li class="menu_item"><a class="menu_item_link" href="#">contact</a></li>
+                    </nav>
+                </div>
+            </div>
         </div>
         <div class="header_info">
-            <p class="header_title">“I’m looking for the unexpected.</p>
-            <p class="header_title"> I’m looking for things I’ve never seen before.”</p>
+            <h1 class="header_title">
+                <span>“I’m looking for the unexspanected.</span>
+                <span> I’m looking for things I’ve never seen before.”</span>
+            </h1>
         </div>
     </header>
     <main>
@@ -35,22 +51,30 @@
                     <div class="services_item">
                         <img src="assets/coffee.png">
                         <h2 class="services_item_title">coffee</h2>
-                        <p class="services_item_info">Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.</p>
+                        <p class="services_item_info">Apple pie icing sweet. Brownie jelly-o applicake applicake sweet
+                            roll liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu
+                            applicake jujubes.</p>
                     </div>
                     <div class="services_item">
                         <img src="assets/instant.png">
                         <h2 class="services_item_title">instant</h2>
-                        <p class="services_item_info">Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.</p>
+                        <p class="services_item_info">Apple pie icing sweet. Brownie jelly-o applicake applicake sweet
+                            roll liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu
+                            applicake jujubes.</p>
                     </div>
                     <div class="services_item">
                         <img src="assets/dslr.png">
                         <h2 class="services_item_title">serious</h2>
-                        <p class="services_item_info">Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.</p>
+                        <p class="services_item_info">Apple pie icing sweet. Brownie jelly-o applicake applicake sweet
+                            roll liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu
+                            applicake jujubes.</p>
                     </div>
                     <div class="services_item">
                         <img src="assets/frame.png">
                         <h2 class="services_item_title">frame</h2>
-                        <p class="services_item_info">Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.</p>
+                        <p class="services_item_info">Apple pie icing sweet. Brownie jelly-o applicake applicake sweet
+                            roll liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu
+                            applicake jujubes.</p>
                     </div>
                 </div>
             </div>
@@ -59,23 +83,34 @@
             <div class="portfolio">
                 <div class="portfolio_header">
                     <h2 class="title_header _portfolio">portfolio</h2>
-                    <ul class="portfolio_list">
-                        <li class="portfolio_list_item"><a href="#">all</a></li>
-                        <li class="portfolio_list_item"><a href="#">panoramas</a></li>
-                        <li class="portfolio_list_item"><a href="#">portraits</a></li>
-                        <li class="portfolio_list_item"><a href="#">macro</a></li>
-                        <li class="portfolio_list_item"><a href="#">journal</a></li>
-                    </ul>
+                    <div class="menu">
+                        <input type="checkbox" id="menu2" class="menu_btn">
+                        <label for="menu2">
+                            <div class='menu_btn_list'>
+                                <span class="menu_btn_line _line1 _portfolio_menu"></span>
+                                <span class="menu_btn_line _line2 _portfolio_menu"></span>
+                                <span class="menu_btn_line _line3 _portfolio_menu"></span>
+                            </div>
+                        </label>
+                        </input>
+                        <nav class="menu_list _menu_list_portfolio">
+                            <li class="menu_item"><a class="menu_item_link _menu_link_portfolio" href="#">all</a></li>
+                            <li class="menu_item"><a class="menu_item_link _menu_link_portfolio" href="#">panoramas</a></li>
+                            <li class="menu_item"><a class="menu_item_link _menu_link_portfolio" href="#">portraits</a></li>
+                            <li class="menu_item"><a class="menu_item_link _menu_link_portfolio" href="#">macro</a></li>
+                            <li class="menu_item"><a class="menu_item_link _menu_link_portfolio" href="#">journal</a></li>
+                        </nav>
+                    </div>
                 </div>
                 <div class="portfolio_img_wrap">
-                    <div class="portfolio_img"><img src="assets/portfolio.jpg"></div>
-                    <div class="portfolio_img"><img src="assets/portfolioV2.jpg"></div>
-                    <div class="portfolio_img"><img src="assets/portfolioV3.jpg"></div>
-                    <div class="portfolio_img"><img src="assets/portfolioV4.jpg"></div>
-                    <div class="portfolio_img"><img src="assets/portfolioV5.jpg"></div>
-                    <div class="portfolio_img"><img src="assets/portfolioV6.jpg"></div>
-                    <div class="portfolio_img"><img src="assets/portfolioV7.jpg"></div>
-                    <div class="portfolio_img"><img src="assets/portfolioV8.jpg"></div>
+                    <div tabindex="0" class="portfolio_img"><img src="assets/portfolio.jpg"></div>
+                    <div tabindex="0" class="portfolio_img"><img src="assets/portfolioV2.jpg"></div>
+                    <div tabindex="0" class="portfolio_img"><img src="assets/portfolioV3.jpg"></div>
+                    <div tabindex="0" class="portfolio_img"><img src="assets/portfolioV4.jpg"></div>
+                    <div tabindex="0" class="portfolio_img"><img src="assets/portfolioV5.jpg"></div>
+                    <div tabindex="0" class="portfolio_img"><img src="assets/portfolioV6.jpg"></div>
+                    <div tabindex="0" class="portfolio_img"><img src="assets/portfolioV7.jpg"></div>
+                    <div tabindex="0" class="portfolio_img"><img src="assets/portfolioV8.jpg"></div>
                 </div>
             </div>
         </div>
@@ -83,34 +118,50 @@
             <div class="default">
                 <div class="default_section_info">
                     <h2 class="title_header _default">just default section</h2>
-                    <p class="default_section_text">Bear claw marzipan bear claw applicake I love muffin. Lemon drops gummi bears pastry gummi bears sesame snaps I love unerdwear.com. Soufflé cotton candy dessert candy ice cream wafer gummies cheesecake brownie.</p>
-                    <p class="default_section_text">Muffin chupa chups jelly beans sweet pie applicake. Croissant chocolate cake I love pudding. Ice cream I love powder pudding apple pie marshmallow. Cupcake marzipan oat cake bonbon I love candy canes toffee.</p>
+                    <p class="default_section_text">Bear claw marzipan bear claw applicake I love muffin. Lemon drops
+                        gummi bears pastry gummi bears sesame snaps I love unerdwear.com. Soufflé cotton candy dessert
+                        candy ice cream wafer gummies cheesecake brownie.</p>
+                    <p class="default_section_text">Muffin chupa chups jelly beans sweet pie applicake. Croissant
+                        chocolate cake I love pudding. Ice cream I love powder pudding apple pie marshmallow. Cupcake
+                        marzipan oat cake bonbon I love candy canes toffee.</p>
                     <button class="default_section_btn">visit me</button>
                 </div>
                 <div class="default_section_video">
-                    <iframe src="https://player.vimeo.com/video/70660691" width="560" height="320" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    <iframe src="https://player.vimeo.com/video/70660691" width="100%" height="320" frameborder="0"
+                        webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                 </div>
             </div>
         </div>
         <div class="twitter_container">
             <div class="twitter">
-                <h2 class="title_header">just default section</h2>
-                <i class="fa fa-twitter fa-lg twitter_icon" aria-hidden="true"></i>
-                <p class="twitter_text">Unerdwear cookie liquorice. Cake donut cupcake lollipop soufflé candy. Chocolate oat cake <a class="twitter_nickname_link" href="#">@cheesecake</a> tootsie roll.</p>
+                <h2 class="title_header _default">just default section</h2>
+                <span class="fa fa-twitter fa-lg twitter_icon" aria-hidden="true"></span>
+                <p class="twitter_text">Unerdwear cookie liquorice. Cake donut cupcake lollipop soufflé candy.
+                    Chocolate oat cake <a class="twitter_nickname_link" href="#">@cheesecake</a> tootsie roll.</p>
             </div>
         </div>
-        <div class="bio_container"> 
+        <div class="bio_container">
             <div class="bio">
                 <h2 class="title_header">Who is john doe?</h2>
                 <div class="bio_info_section">
-                    <p class="bio_text">Bear claw marzipan bear claw applicake I love muffin. Lemon drops gummi bears pastry gummi bears sesame snaps I love unerdwear.com. Soufflé cotton candy dessert candy ice cream wafer gummies cheesecake brownie.</p>
-                    <p class="bio_text">Muffin chupa chups jelly beans sweet pie applicake. Croissant chocolate cake I love pudding. Ice cream I love powder pudding apple pie marshmallow. Cupcake marzipan oat cake bonbon I love candy canes toffee.</p>
-                    <p class="bio_text">Pudding dessert jujubes tiramisu gingerbread croissant tiramisu applicake. Sesame snaps sugar plum cotton candy chocolate bonbon lemon drops candy canes cotton candy. Cake toffee pie bear claw pastry.</p>
+                    <p class="bio_text">Bear claw marzipan bear claw applicake I love muffin. Lemon drops gummi bears
+                        pastry gummi bears sesame snaps I love unerdwear.com. Soufflé cotton candy dessert candy ice
+                        cream wafer gummies cheesecake brownie.</p>
+                    <p class="bio_text">Muffin chupa chups jelly beans sweet pie applicake. Croissant chocolate cake I
+                        love pudding. Ice cream I love powder pudding apple pie marshmallow. Cupcake marzipan oat cake
+                        bonbon I love candy canes toffee.</p>
+                    <p class="bio_text">Pudding dessert jujubes tiramisu gingerbread croissant tiramisu applicake.
+                        Sesame snaps sugar plum cotton candy chocolate bonbon lemon drops candy canes cotton candy.
+                        Cake toffee pie bear claw pastry.</p>
                     <ul class="bio_social_list">
-                        <li class="bio_social_list_item"><a class="bio_social_list_link" href="#"><i class="bio_social_list_icon fa fa-twitter fa-2x " aria-hidden="true"></i></a></li>
-                        <li  class="bio_social_list_item"><a class="bio_social_list_link" href="#"><i class="bio_social_list_icon fa fa-google-plus-official fa-2x" aria-hidden="true"></i></a></li>
-                        <li  class="bio_social_list_item"><a class="bio_social_list_link" href="#"><i class="bio_social_list_icon fa fa-vk fa-2x" aria-hidden="true"></i></a></li>
-                        <li  class="bio_social_list_item"><a class="bio_social_list_link" href="#"><i class="bio_social_list_icon fa fa-coffee fa-2x" aria-hidden="true"></i></a></li>
+                        <li class="bio_social_list_item"><a class="bio_social_list_link" href="#"><span class="bio_social_list_icon fa fa-twitter fa-2x "
+                                    aria-hidden="true"></span></a></li>
+                        <li class="bio_social_list_item"><a class="bio_social_list_link" href="#"><span class="bio_social_list_icon fa fa-google-plus-official fa-2x"
+                                    aria-hidden="true"></span></a></li>
+                        <li class="bio_social_list_item"><a class="bio_social_list_link" href="#"><span class="bio_social_list_icon fa fa-vk fa-2x"
+                                    aria-hidden="true"></span></a></li>
+                        <li class="bio_social_list_item"><a class="bio_social_list_link" href="#"><span class="bio_social_list_icon fa fa-coffee fa-2x"
+                                    aria-hidden="true"></span></a></li>
                     </ul>
                 </div>
             </div>
@@ -119,7 +170,8 @@
             <div class="testimonials">
                 <h2 class="title_header _testimonial">testimonials</h2>
                 <span class="testimonials_apostrophe">”</span>
-                <p class="testimonials_text">Applicake chocolate cake wafer toffee pie soufflé wafer. Tart marshmallow wafer macaroon cheesecake jelly. Gingerbread cookie soufflé sweet roll sweet roll jelly-o.</p>
+                <p class="testimonials_text">Applicake chocolate cake wafer toffee pie soufflé wafer. Tart marshmallow
+                    wafer macaroon cheesecake jelly. Gingerbread cookie soufflé sweet roll sweet roll jelly-o.</p>
                 <a class="testimonials_autor" href="#">-Walter White</a>
             </div>
         </div>
@@ -127,43 +179,45 @@
             <div class="contact">
                 <h2 class="title_header">contact</h2>
                 <form class="contact_form">
-                <div class="contact_form_info_wrap">
-                    <label for="inputName" class="contact_form_label">full name</label>
-                    <input class="contact_form_input contact_form_input_info" id="inputName" type="text" name="username">
-                    <label for="inputEmail" class="contact_form_label">email</label>
-                    <input class="contact_form_input contact_form_input_info" id="inputEmail" type="text" name="email">
-                </div>
-                <div class="contact_example">
-                    <p>Jujubes bear claw croissant wafer sweet lemon drops brownie chocolate bar. Sweet lollipop halvah tootsie roll cake fruitcake. Chocolate cake chocolate bar gingerbread lollipop tart. Jujubes bear claw donut chupa chups.</p>
-                    <ul class="contact_example_list">
-                        <li>Linda Newman</li>             
-                        <li>W325 State Road 123</li>
-                        <li>Mondovi, WI(Wisconsin) 98746-54321</li>
-                        <li>(715) 946 - 1234</li>
-                    </ul>
-                </div>
-                <div  class="contact_form_message_wrap">
-                    <label for="inputMessage" class="contact_form_label">message</label>
-                    <textarea class="contact_form_input contact_form_input_message" id="inputMessage"></textarea>
-                    <button class="contact_form_btn">message</button>
-                </div>
+                    <div class="contact_form_info_wrap">
+                        <label for="inputName" class="contact_form_label">full name</label>
+                        <input class="contact_form_input contact_form_input_info" id="inputName" type="text" name="username">
+                        <label for="inputEmail" class="contact_form_label">email</label>
+                        <input class="contact_form_input contact_form_input_info" id="inputEmail" type="text" name="email">
+                    </div>
+                    <div class="contact_example">
+                        <p>Jujubes bear claw croissant wafer sweet lemon drops brownie chocolate bar. Sweet lollipop
+                            halvah tootsie roll cake fruitcake. Chocolate cake chocolate bar gingerbread lollipop tart.
+                            Jujubes bear claw donut chupa chups.</p>
+                        <address>
+                            Linda Newman</br>
+                            W325 State Road 123</br>
+                            Mondovi, WI(Wisconsin) 98746-54321</br>
+                            (715) 946 - 1234</br>
+                        </address>
+                    </div>
+                    <div class="contact_form_message_wrap">
+                        <label for="inputMessage" class="contact_form_label">message</label>
+                        <textarea class="contact_form_input contact_form_input_message" id="inputMessage"></textarea>
+                        <button class="contact_form_btn">message</button>
+                    </div>
                 </form>
             </div>
         </div>
         <div class="footer_container">
             <div class="footer">
                 <ul class="footer_nav">
-                    <li class="footer_nav_item">home</li>
-                    <li class="footer_nav_item">services</li>
-                    <li class="footer_nav_item">portfolio</li>
-                    <li class="footer_nav_item">contact</li>
+                    <li class="footer_nav_item"><a class="footer_nav_item_link" href="#">home</a></li>
+                    <li class="footer_nav_item"><a class="footer_nav_item_link" href="#">services</a></li>
+                    <li class="footer_nav_item"><a class="footer_nav_item_link" href="#">portfolio</a></li>
+                    <li class="footer_nav_item"><a class="footer_nav_item_link" href="#">contact</a></li>
                 </ul>
                 <p class="footer_year">2018 &copy;</p>
             </div>
         </div>
     </main>
-
-<script src = "https://use.fontawesome.com/e062de99bd.js"></script>
-<script type="text/javascript" src="main.js"></script>
+    <script src="https://use.fontawesome.com/e062de99bd.js"></script>
+    <script type="text/javascript" src="main.js"></script>
 </body>
+
 </html>
